@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../assets/fonts/ace_attorney/Ace-Attorney.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-family: 'MinhaFonte';
+}
