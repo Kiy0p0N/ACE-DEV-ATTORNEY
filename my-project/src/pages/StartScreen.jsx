@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 // imports corretos
+import Button from "../components/Button";
 import bgImage from "../assets/backgrounds/courtroom.png";
 
 function StartScreen({ onStart }) {

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import script from "../data/script";
 import DialogueBox from "../components/DialogueBox";
+import Button from "../components/Button";
 
 import objection from "../assets/backgrounds/objection.png";
 
@@ -71,12 +72,7 @@ function Game() {
           </div>
 
           {showContinue && (
-            <button
-              onClick={nextScene}
-              className="absolute bottom-8 right-8 px-6 py-3 bg-orange-500 rounded font-bold text-white"
-            >
-              Continuar ▶
-            </button>
+            <Button text={"Continuar ▶"} onClick={nextScene} />
           )}
         </>
       )}

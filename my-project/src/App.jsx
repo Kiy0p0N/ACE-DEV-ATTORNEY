@@ -11,7 +11,7 @@ function App() {
 
   const playMusic = () => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.005;
+      audioRef.current.volume = 0.05;
       audioRef.current.play();
     }
   };
