@@ -47,7 +47,7 @@ function DialogueBox({ text = "", speaker, audio, onContinue }) {
           </div>
         )}
 
-        <p className="text-3xl font-mono min-h-[120px] leading-relaxed break-words">
+        <p className="text-3xl font-mono min-h-30 leading-relaxed wrap-break-words">
           {displayedText}
         </p>
 

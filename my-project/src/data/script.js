@@ -30,8 +30,37 @@ import promotorA12 from "../assets/sounds/audios/promotor/promotor-12.ogg";
 import promotorA13 from "../assets/sounds/audios/promotor/promotor-13.ogg";
 
 
+/* ADVOGADO */
+/* BACKGROUND */
+import advogadoBg1 from "../assets/backgrounds/advogado/advogado-1.png";
+import advogadoBg2 from "../assets/backgrounds/advogado/advogado-2.png";
+import advogadoBg3 from "../assets/backgrounds/advogado/advogado-3.png";
+import advogadoBg4 from "../assets/backgrounds/advogado/advogado-4.png";
+import advogadoBg5 from "../assets/backgrounds/advogado/advogado-5.png";
+import advogadoBg6 from "../assets/backgrounds/advogado/advogado-6.png";
+import advogadoBg7 from "../assets/backgrounds/advogado/advogado-7.png";
+import advogadoBg8 from "../assets/backgrounds/advogado/advogado-8.png";
 
-import defenseBg from "../assets/backgrounds/defense.png";
+/* AUDIO */
+import advogadoA1 from "../assets/sounds/audios/advogado/advogado-1.mp4";
+import advogadoA2 from "../assets/sounds/audios/advogado/advogado-2.mp4";
+import advogadoA3 from "../assets/sounds/audios/advogado/advogado-3.mp4";
+import advogadoA4 from "../assets/sounds/audios/advogado/advogado-4.mp4";
+import advogadoA5 from "../assets/sounds/audios/advogado/advogado-5.mp4";
+import advogadoA6 from "../assets/sounds/audios/advogado/advogado-6.mp4";
+import advogadoA7 from "../assets/sounds/audios/advogado/advogado-7.mp4";
+import advogadoA8 from "../assets/sounds/audios/advogado/advogado-8.mp4";
+import advogadoA9 from "../assets/sounds/audios/advogado/advogado-9.mp4";
+import advogadoA10 from "../assets/sounds/audios/advogado/advogado-10.mp4";
+import advogadoA11 from "../assets/sounds/audios/advogado/advogado-11.mp4";
+import advogadoA12 from "../assets/sounds/audios/advogado/advogado-12.mp4";
+import advogadoA13 from "../assets/sounds/audios/advogado/advogado-13.mp4";
+import advogadoA14 from "../assets/sounds/audios/advogado/advogado-14.mp4";
+import advogadoA15 from "../assets/sounds/audios/advogado/advogado-15.mp4";
+import advogadoA16 from "../assets/sounds/audios/advogado/advogado-16.mp4";
+import advogadoA17 from "../assets/sounds/audios/advogado/advogado-17.mp4";
+
+
 import defendantBg from "../assets/backgrounds/bg-2.jpg";
 import witnessBg from "../assets/backgrounds/bg-2.jpg";
 
@@ -40,7 +69,7 @@ import evidence from "../assets/evidence/evidence-1.png";
 
 const charactersName = {
   juiz: "Juiz",
-  advogado: "Advogado de Defesa: Ariel",
+  advogado: "Advogado de advogado: Ariel",
   reu: "Réu",
   promotor: "Promotor: Felipe de Oliveira",
   juri: "Júri",
@@ -138,29 +167,33 @@ const script = [
 
   // 3. Primeira interação com o júri
   {
-    background: defenseBg,
+    background: advogadoBg1,
     objection: true,
     autoNext: true,
     delay: 2500,
   },
   {
-    background: defenseBg,
+    background: advogadoBg1,
     speaker: charactersName.advogado,
+    audio: advogadoA1,
     text: "Antes de prosseguirmos, uma pergunta ao júri.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg1,
     speaker: charactersName.advogado,
+    audio: advogadoA2,
     text: "Quantos aqui já pesquisaram solução ou código na internet?",
   },
   {
-    background: defenseBg,
+    background: advogadoBg1,
     speaker: charactersName.advogado,
+    audio: advogadoA3,
     text: "Levantem a mão.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg1,
     speaker: charactersName.advogado,
+    audio: advogadoA4,
     text: "Obrigado.",
   },
   {
@@ -198,12 +231,6 @@ const script = [
     text: "Encontrei um trecho extremamente semelhante a um código disponível online.",
   },
   {
-    background: evidence,
-    evidence: evidence-1,
-    autoNext: false,
-    continueDelay: 2500,
-  },
-  {
     background: defendantBg,
     speaker: charactersName.testemunha,
     text: "Quando vi, pensei: isso não pode ser coincidência.",
@@ -222,9 +249,10 @@ const script = [
 
   // 5. Interrogatório da testemunha
   {
-    background: defenseBg,
+    background: advogadoBg2,
     speaker: charactersName.advogado,
-    text: "Permissão para interrogar a testemunha.",
+    audio: advogadoA5,
+    text: "Permissão para interrogar a testemunha?",
   },
   {
     background: judgeBg,
@@ -232,8 +260,9 @@ const script = [
     text: "Concedida.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg3,
     speaker: charactersName.advogado,
+    audio: advogadoA6,
     text: "Testemunha, o código estava idêntico ou apenas similar?",
   },
   {
@@ -252,41 +281,47 @@ const script = [
     text: "A lógica foi reorganizada.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg4,
     objection: true,
     autoNext: true,
     delay: 2500,
   },
   {
-    background: defenseBg,
+    background: advogadoBg4,
     speaker: charactersName.advogado,
+    audio: advogadoA7,
     text: "Então não era uma simples cópia.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg4,
     speaker: charactersName.advogado,
+    audio: advogadoA8,
     text: "Houve compreensão, adaptação e transformação.",
   },
 
   // 6. Explicação do conceito central
   {
-    background: defenseBg,
+    background: advogadoBg5,
     speaker: charactersName.advogado,
-    text: "Excelência, apresento a principal tese da defesa.",
+    audio: advogadoA9,
+    text: "Excelência, apresento a principal tese da advogado.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg5,
     speaker: charactersName.advogado,
+    audio: advogadoA10,
     text: "Nada é original.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg5,
     speaker: charactersName.advogado,
+    audio: advogadoA11,
     text: "Toda criação nasce de referências anteriores.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg5,
     speaker: charactersName.advogado,
+    audio: advogadoA12,
     text: "Programadores aprendem lendo documentação, estudando códigos e observando soluções.",
   },
   {
@@ -302,23 +337,27 @@ const script = [
     text: "Então quer dizer que agora copiar virou arte?",
   },
   {
-    background: defenseBg,
+    background: advogadoBg6,
     speaker: charactersName.advogado,
+    audio: advogadoA13,
     text: "Não.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg6,
     speaker: charactersName.advogado,
+    audio: advogadoA14,
     text: "Existe uma diferença.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg6,
     speaker: charactersName.advogado,
+    audio: advogadoA15,
     text: "Copiar como ladrão é repetir sem entender.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg6,
     speaker: charactersName.advogado,
+    audio: advogadoA16,
     text: "Roubar como artista é estudar, adaptar, transformar e gerar algo novo.",
   },
 
@@ -352,8 +391,9 @@ const script = [
     text: "Respondam apenas: sim ou não.",
   },
   {
-    background: defenseBg,
+    background: advogadoBg7,
     speaker: charactersName.advogado,
+    audio: advogadoA17,
     text: "Existe criatividade sem referência?",
   },
 
