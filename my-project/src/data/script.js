@@ -1,18 +1,33 @@
 import courtroomBg from "../assets/backgrounds/courtroom.png";
 import judgeBg from "../assets/backgrounds/judge.png";
 
-// Promotor bg
-import prosecutorBg1 from "../assets/backgrounds/promotor/promotor-1.png";
-import prosecutorBg2 from "../assets/backgrounds/promotor/promotor-2.png";
-import prosecutorBg3 from "../assets/backgrounds/promotor/promotor-3.png";
-import prosecutorBg4 from "../assets/backgrounds/promotor/promotor-4.png";
-import prosecutorBg5 from "../assets/backgrounds/promotor/promotor-5.png";
-import prosecutorBg6 from "../assets/backgrounds/promotor/promotor-6.png";
-import prosecutorBg7 from "../assets/backgrounds/promotor/promotor-7.png";
-import prosecutorBg8 from "../assets/backgrounds/promotor/promotor-8.png";
-import prosecutorBg9 from "../assets/backgrounds/promotor/promotor-9.png";
-import prosecutorBg10 from "../assets/backgrounds/promotor/promotor-10.png";
-import prosecutorBg11 from "../assets/backgrounds/promotor/promotor-11.png";
+/* PROMOTOR */
+/* BACKGROUND */
+import promotorBg1 from "../assets/backgrounds/promotor/promotor-1.png";
+import promotorBg2 from "../assets/backgrounds/promotor/promotor-2.png";
+import promotorBg3 from "../assets/backgrounds/promotor/promotor-3.png";
+import promotorBg4 from "../assets/backgrounds/promotor/promotor-4.png";
+import promotorBg5 from "../assets/backgrounds/promotor/promotor-5.png";
+import promotorBg6 from "../assets/backgrounds/promotor/promotor-6.png";
+import promotorBg7 from "../assets/backgrounds/promotor/promotor-7.png";
+import promotorBg8 from "../assets/backgrounds/promotor/promotor-8.png";
+import promotorBg9 from "../assets/backgrounds/promotor/promotor-9.png";
+import promotorBg10 from "../assets/backgrounds/promotor/promotor-10.png";
+import promotorBg11 from "../assets/backgrounds/promotor/promotor-11.png";
+/* AUDIO */
+import promotorA1 from "../assets/sounds/audios/promotor/promotor-1.ogg";
+import promotorA2 from "../assets/sounds/audios/promotor/promotor-2.ogg";
+import promotorA3 from "../assets/sounds/audios/promotor/promotor-3.ogg";
+import promotorA4 from "../assets/sounds/audios/promotor/promotor-4.ogg";
+import promotorA5 from "../assets/sounds/audios/promotor/promotor-5.ogg";
+import promotorA6 from "../assets/sounds/audios/promotor/promotor-6.ogg";
+import promotorA7 from "../assets/sounds/audios/promotor/promotor-7.ogg";
+import promotorA8 from "../assets/sounds/audios/promotor/promotor-8.ogg";
+import promotorA9 from "../assets/sounds/audios/promotor/promotor-9.ogg";
+import promotorA10 from "../assets/sounds/audios/promotor/promotor-10.ogg";
+import promotorA11 from "../assets/sounds/audios/promotor/promotor-11.ogg";
+import promotorA12 from "../assets/sounds/audios/promotor/promotor-12.ogg";
+import promotorA13 from "../assets/sounds/audios/promotor/promotor-13.ogg";
 
 
 
@@ -21,10 +36,11 @@ import defendantBg from "../assets/backgrounds/bg-2.jpg";
 import witnessBg from "../assets/backgrounds/bg-2.jpg";
 
 import objection from "../assets/backgrounds/objection.png";
+import evidence from "../assets/evidence/evidence-1.png";
 
 const charactersName = {
   juiz: "Juiz",
-  advogado: "Advogado",
+  advogado: "Advogado de Defesa: Ariel",
   reu: "Réu",
   promotor: "Promotor: Felipe de Oliveira",
   juri: "Júri",
@@ -69,28 +85,33 @@ const script = [
 
   // 2. Apresentação da acusação
   {
-    background: prosecutorBg1,
+    background: promotorBg1,
     speaker: charactersName.promotor,
+    audio: promotorA1,
     text: "Excelência, sejamos francos, este caso é simples.",
   },
   {
-    background: prosecutorBg2,
+    background: promotorBg2,
     speaker: charactersName.promotor,
+    audio: promotorA2,
     text: "O réu não criou. Ele copiou.",
   },
   {
-    background: prosecutorBg3,
+    background: promotorBg3,
     speaker: charactersName.promotor,
+    audio: promotorA3,
     text: "Linhas inteiras foram encontradas em fóruns, documentações e repositórios públicos.",
   },
   {
-    background: prosecutorBg4,
+    background: promotorBg4,
     speaker: charactersName.promotor,
+    audio: promotorA4,
     text: "Ele chama isso de aprendizado.",
   },
   {
-    background: prosecutorBg4,
+    background: promotorBg4,
     speaker: charactersName.promotor,
+    audio: promotorA5,
     text: "Já eu chamo isso de fraude intelectual.",
   },
   {
@@ -109,8 +130,9 @@ const script = [
     text: "Mas eu adaptei, estudei e modifiquei o código.",
   },
   {
-    background: prosecutorBg5,
+    background: promotorBg5,
     speaker: charactersName.promotor,
+    audio: promotorA6,
     text: "Ah, claro. A velha desculpa de todo programador.",
   },
 
@@ -142,21 +164,17 @@ const script = [
     text: "Obrigado.",
   },
   {
-    background: prosecutorBg5,
+    background: promotorBg5,
     speaker: charactersName.promotor,
+    audio: promotorA7,
     text: "Ah, que interessante...",
   },
   {
-    background: prosecutorBg5,
+    background: promotorBg5,
     speaker: charactersName.promotor,
+    audio: promotorA8,
     text: "Parece que temos uma sala cheia de suspeitos.",
   },
-  // {
-  //   background: prosecutorBg,
-  //   evidence: evidence1,
-  //   autoNext: false,
-  //   continueDelay: 2500,
-  // },
   {
     background: judgeBg,
     speaker: charactersName.juiz,
@@ -180,6 +198,12 @@ const script = [
     text: "Encontrei um trecho extremamente semelhante a um código disponível online.",
   },
   {
+    background: evidence,
+    evidence: evidence-1,
+    autoNext: false,
+    continueDelay: 2500,
+  },
+  {
     background: defendantBg,
     speaker: charactersName.testemunha,
     text: "Quando vi, pensei: isso não pode ser coincidência.",
@@ -190,8 +214,9 @@ const script = [
     text: "Era praticamente idêntico.",
   },
   {
-    background: prosecutorBg6,
+    background: promotorBg6,
     speaker: charactersName.promotor,
+    audio: promotorA9,
     text: "Vejam só, temos uma denúncia concreta.",
   },
 
@@ -265,15 +290,16 @@ const script = [
     text: "Programadores aprendem lendo documentação, estudando códigos e observando soluções.",
   },
   {
-    background: prosecutorBg7,
+    background: promotorBg7,
     objection: true,
     autoNext: true,
     delay: 2500,
   },
   {
-    background: prosecutorBg7,
+    background: promotorBg7,
     speaker: charactersName.promotor,
-    text: "Então agora copiar virou arte?",
+    audio: promotorA10,
+    text: "Então quer dizer que agora copiar virou arte?",
   },
   {
     background: defenseBg,
@@ -308,18 +334,21 @@ const script = [
     text: "Se alguém aprende observando soluções existentes, isso automaticamente significa plágio?",
   },
   {
-    background: prosecutorBg8,
+    background: promotorBg8,
     speaker: charactersName.promotor,
+    audio: promotorA11,
     text: "Pergunta objetiva ao júri.",
   },
   {
-    background: prosecutorBg9,
+    background: promotorBg9,
     speaker: charactersName.promotor,
+    audio: promotorA12,
     text: "Se duas soluções parecem muito parecidas, isso significa plágio?",
   },
   {
-    background: prosecutorBg10,
+    background: promotorBg10,
     speaker: charactersName.promotor,
+    audio: promotorA13,
     text: "Respondam apenas: sim ou não.",
   },
   {
@@ -385,12 +414,6 @@ const script = [
     background: judgeBg,
     speaker: charactersName.juiz,
     text: "O réu é culpado de plágio ou inocente por aprender com referências?",
-  },
-  {
-    background: judgeBg,
-    text: "",
-    autoNext: true,
-    delay: 4000,
   },
   {
     background: judgeBg,

@@ -81,6 +81,7 @@ function Game() {
         <DialogueBox
           speaker={currentScene.speaker}
           text={currentScene.text}
+          audio={currentScene.audio}
           onContinue={nextScene}
         />
       )}
