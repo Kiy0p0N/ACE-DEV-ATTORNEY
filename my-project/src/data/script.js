@@ -139,12 +139,12 @@ const script = [
     audio: juizA1,
     text: "ORDEM NO TRIBUNAL!",
   },
-  {
-    background: juizBg1,
-    speaker: charactersName.juiz,
-    audio: juizA2,
-    text: "Estamos reunidos para julgar o caso: Estado vs. Developer X.",
-  },
+  // {
+  //   background: juizBg1,
+  //   speaker: charactersName.juiz,
+  //   audio: juizA2,
+  //   text: "Estamos reunidos para julgar o caso: Estado vs. Developer X.",
+  // },
   {
     background: juizBg1,
     speaker: charactersName.juiz,
