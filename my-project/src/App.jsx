@@ -11,7 +11,7 @@ function App() {
 
   const playMusic = () => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.05;
+      audioRef.current.volume = 0.1;
       audioRef.current.play();
     }
   };
@@ -19,9 +19,9 @@ function App() {
   return (
     <BrowserRouter>
       {/* Áudio global */}
-      <audio ref={audioRef} loop>
+      {/* <audio ref={audioRef} loop>
         <source src={bgMusic} type="audio/mp3" />
-      </audio>
+      </audio> */}
 
       <Routes>
         <Route path="/" element={<StartScreen onStart={playMusic} />} />

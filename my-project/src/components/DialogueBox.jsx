@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import Button from "./Button";
 
 function DialogueBox({ text = "", speaker, audio, onContinue }) {
   const [displayedText, setDisplayedText] = useState("");
@@ -47,17 +48,12 @@ function DialogueBox({ text = "", speaker, audio, onContinue }) {
           </div>
         )}
 
-        <p className="text-3xl font-mono min-h-30 leading-relaxed wrap-break-words">
+        <p className="w-4/5 text-3xl font-mono min-h-30 leading-relaxed wrap-break-words">
           {displayedText}
         </p>
 
-        {finished && (
-          <button
-            onClick={onContinue}
-            className="absolute bottom-4 right-4 px-4 py-2 bg-orange-500 hover:bg-orange-600 rounded font-bold"
-          >
-            Continuar ▶
-          </button>
+        {finished && onContinue && (
+          <Button onClick={onContinue} text={"Continuar >>"} />
         )}
       </div>
     </div>
